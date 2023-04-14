@@ -16,6 +16,10 @@
         "headerButtons";
 }
 
+header{
+    padding-bottom: 5%;
+}
+
 /* ---------------------------------------------------------------- */
 /* -------------------------------------------PARTE FIJA DEL HEADER */ 
 /* ---------------------------------------------------------------- */
@@ -229,8 +233,8 @@
     font-weight: 400;
     font-size: 250%;
     line-height: 100%;
-    
 }
+
 .header__info__p {
     color: white;
     text-align: center;
@@ -323,7 +327,7 @@
 /* --------------------------------------------------------------------------- CSS PARA EL MAIN y CONTENIDO (INDEX) -------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-.main__tittle{
+.index__tittle{
     margin: 1rem ;
     text-align: center;
     font-family: 'Heebo', sans-serif;
@@ -428,12 +432,13 @@
 /* ----------------------------------------------------------------- */
 
 main h2{/* Titulos H2 */
-    margin: 20px ;
+    margin: 20px 0 ;
     color: black;
     text-align: center;
     font-family: 'Heebo', sans-serif;
     font-weight: 400;
     font-size: 400%;
+    width: 100%;
 }
 
 main h3{
@@ -894,6 +899,9 @@ footer section div {
         padding-bottom: 1%;
     }
 
+    .index__tittle{
+        font-size: 300%;
+    }
 
      /* -------------------------AYUDA*/
     .main__helpContainer{
@@ -950,19 +958,13 @@ footer section div {
 
 
 
-
-
-
-
-
-
-
-
 /* -----------------------PEQUEÑOS AJUSTES EN OTRAS RESOLUCIONES*/
 @media (min-width:1233px) {
     .header__info{
         height: 70%;
     }
 
-
+    .index__tittle{
+        font-size: 350%;
+    }
 }
