@@ -340,7 +340,7 @@ header{
 
 .main__newArrivals__item{
     width: 9rem;
-    height: 16rem;
+    height: 18rem;
     display: grid;
     grid-template-rows: 4fr 1fr;
     grid-template-columns: 2fr 1fr;
