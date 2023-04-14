@@ -81,12 +81,16 @@ header{
     text-decoration: none;
 }
 
+.header__menu__item a:hover{
+    color: #424b37;
+    text-decoration: underline;
+}
+
 .header__menu__item__selected{
-    background-color: #424b37;
+    color: #3a422f !important;
     width: 100%;
     height: auto;
     border-radius: 10PX;
-
 }
 
 /* -------------------------BARRA DE NAVEGACION DROPDOWN */  
@@ -105,7 +109,6 @@ header{
     background: transparent; 
 }
 
-
 .header__dropdownMenu__nav{
     background-color: #768561;
     width: 50%;
@@ -117,8 +120,6 @@ header{
     text-decoration: none;
 }
 
-
-
 /* ----------------BOTONES DEL DROPDOWN */
 .header__dropdownMenu__nav__linkBtn{
     padding: 1%;
@@ -128,9 +129,13 @@ header{
     color: #fff;
 }
 
+.header__dropdownMenu__nav__linkBtn__selected{
+    color: #3a422f !important;
+}
+
 .header__dropdownMenu__nav__linkBtn:hover{
     background-color: #424b37;
-    color: #fff;
+    color: #fff !important;
 }
 
 .header__dropdownMenu__nav__loginBtn{
@@ -148,11 +153,6 @@ header{
     color: white;
 }
 
-
-
-
-
-
 /* -------------------BARRA DE BUSQUEDA DEL HEADER */
 .header__searchBar{
     width: 40%;
@@ -165,7 +165,6 @@ header{
     background-color: rgba(209, 205, 205, 0.685);
     border: solid 1px white;
     border-radius: 20px;
-
 }
 
 .header__searchButton{
@@ -211,8 +210,6 @@ header{
     color: #fff;
     padding: 0 2%;
 }
-
-
 
 /* ----------------------------------------------------------------- */
 /* -------------------------------------------INFORMACION DEL HEADER */
@@ -260,7 +257,6 @@ header{
 /* ----------------------------------------------------------------- */
 /* ----------------------------------------BOTONES BUY NOW Y EXPLORE */
 /* ----------------------------------------------------------------- */
-
 .header__buttons{
     margin-top: 20%;
     grid-area: headerButtons;
@@ -298,8 +294,6 @@ header{
     color: #fff;
 }
 
-
-
 /* -------------------------BORDE DEL HEADER*/
 .header__waves{
     width: 100vw;
@@ -321,14 +315,11 @@ header{
 
 
 
-
-
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------- CSS PARA EL MAIN y CONTENIDO (INDEX) -------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-
 .index__tittle{
-    margin: 1rem ;
+    margin: 1rem 0 ;
     text-align: center;
     font-family: 'Heebo', sans-serif;
     font-weight: 400;
@@ -338,7 +329,6 @@ header{
 /* ----------------------------------------------------------------- */
 /* --------------------------------------------SECCION DE DESTACADOS */
 /* ----------------------------------------------------------------- */
-
 .main__newArrivals{
     display: flex;
     flex-wrap: wrap;
@@ -347,6 +337,7 @@ header{
     height: auto;
     margin: 2% 5vw 10% 5vw;
 }
+
 .main__newArrivals__item{
     width: 9rem;
     height: 16rem;
@@ -391,7 +382,6 @@ header{
 /* ----------------------------------------------------------------- */
 /* --------------------------------------------SECCION DE CATEGORIAS */
 /* ----------------------------------------------------------------- */
-
 .main__categories{
     display: flex;
     justify-content: center;
@@ -426,23 +416,21 @@ header{
     width: 100%;
 }
 
-
 /* ----------------------------------------------------------------- */
 /* -----------------------------------------------------------TEXTOS */
 /* ----------------------------------------------------------------- */
-
 main h2{/* Titulos H2 */
     margin: 20px 0 ;
     color: black;
     text-align: center;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Dosis', sans-serif;
     font-weight: 400;
-    font-size: 400%;
+    font-size: 250%;
     width: 100%;
 }
 
 main h3{
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Dosis', sans-serif;
     font-weight: 400;
     font-size: 150%;
 }
@@ -453,6 +441,8 @@ main h3{
     font-size: larger;
     margin-bottom: 40px;
 }
+
+
 
 
 
@@ -479,10 +469,14 @@ main h3{
 
 
 
+
+
+
+
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------- CSS PARA EL MAIN y CONTENIDO (SOBRE NOSOTROS) ----------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-
 .main__aboutUsContainer{
     padding: 2% 5vw;
     display: flex;
@@ -497,20 +491,25 @@ main h3{
 
 
 
+
+
+
+
+
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------- CSS PARA EL MAIN y CONTENIDO (AYUDA) -------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-
 .main__helpContainer{
     text-align: center;
     margin: 2% 5vw 5% 5vw;
 }
 
-
 /* ---------------------SECCIONES DE OPCIONES DE AYUDA*/
 .main__helpContainer__section{
     margin: 5% 0;
 }
+
 .main__helpContainer__section form{
     display: flex;
     flex-direction: column;
@@ -524,7 +523,6 @@ main h3{
     flex-direction: row;
     justify-content: space-between;
 }
-
 
 /* ---------------------BOTONES DE AYUDA*/
 .main__helpContainer__section__button{
@@ -545,7 +543,6 @@ main h3{
     background-color: #a3b887;
 }
 
-
 .main__helpContainer__section__searchButton{
     cursor: pointer;
     font-family: 'Heebo', sans-serif;
@@ -560,7 +557,6 @@ main h3{
     background-color: rgba(209, 205, 205, 0.685);
 }
 
-
 /* ---------------------BARRA DE BUSQUEDA DE AYUDA*/
 .main__helpContainer__section__searchBar{
     width: 93%;
@@ -574,6 +570,9 @@ main h3{
 .main__helpContainer__section__searchBar:hover{
     background-color: rgba(209, 205, 205, 0.685);
 }
+
+
+
 
 
 
@@ -631,7 +630,6 @@ main h3{
     background-color: #9baf80bb;    
  }
 
-
 .main__contact__SubmitButton{
     font-family: 'Heebo', sans-serif;
     font-weight: 600;
@@ -662,16 +660,9 @@ main h3{
 
 
 
-
-
-
-
-
-
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------- CSS PARA EL FOOTER -------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-
 .footer__gridContainer{
     background-color:#C2C2C2;
     padding: 2% 5%;
@@ -694,6 +685,7 @@ footer section div {
     padding: 2%;
     
 }
+
 .footer__socialNetworks{
     grid-area: socialNetworks;
     padding: 1%;
@@ -740,13 +732,21 @@ footer section div {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------- RESPONSIVE DESIGN --------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-
-
 @media (min-width:768px) or (orientation: landscape) {
 
     .header__imgs{
@@ -757,8 +757,18 @@ footer section div {
 
 
 
-@media (min-width:980px) {
 
+
+
+
+
+
+
+
+
+
+
+@media (min-width:980px) { 
     /* ----------------------------------------------------------------- */
     /* --------------------------------------------RESPONSIVE DEL HEADER */
     /* ----------------------------------------------------------------- */
@@ -779,7 +789,6 @@ footer section div {
     i#menu{
         display: none;
     }
-
 
     /* ----------------------MOSTRAR NAV*/
     .header__menu{
@@ -804,7 +813,6 @@ footer section div {
     .header__loginButton{
         display: block;
     }
-
 
     /* --------------AJUSTAR PARTE FIJA DEL HEADER*/
     .header__fixed{
@@ -837,11 +845,10 @@ footer section div {
         right: 10vw;
         width: 50%;
     }
+
     .header__imgs #SillonGris{
         padding: 0;
     }
-
-
 
     /* ------------AJUSTAR BOTONES BUYNOW Y EXPLORE*/
     .header__buttons{
@@ -862,12 +869,10 @@ footer section div {
         font-weight:600;
     }
     
-
     .header__ExploreButton{
         width: 70%;
         margin: 1% 0;
         margin-left: 5%;
-
         border:solid 1px #fff;
         color: #fff;
         background-color: transparent;
@@ -879,10 +884,6 @@ footer section div {
     padding-top: 0;
 
     }
-
-
-
-
 
     /* ----------------------------------------------------------------- */
     /* ----------------------------------------------RESPONSIVE DEL MAIN */
@@ -921,15 +922,15 @@ footer section div {
         margin: 2% 10vw 5% 10vw;
     }
 
-
-
-
+    /* -------------------------TEXTOS DEL MAIN*/ 
+    main h2{/* Titulos H2 */
+        font-size: 400%;
+    }
 
     /* ----------------------------------------------------------------- */
     /* --------------------------------------------RESPONSIVE DEL FOOTER */
     /* ----------------------------------------------------------------- */
     
-
     /* --------------------------REORDENAR GRID DEL FOOTER*/
     .footer__gridContainer{
         padding: 2% 10%;
@@ -942,7 +943,6 @@ footer section div {
         grid-gap: 1%;
     }
 
-
     /* --------------------------ESTILOS DEL FOOTER*/
     footer section div {
         border: none;
@@ -951,8 +951,14 @@ footer section div {
     .footer__newsLetter{
         border: none;
     }
-
 }
+
+
+
+
+
+
+
 
 
 
