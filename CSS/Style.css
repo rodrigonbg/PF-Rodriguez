@@ -3,31 +3,14 @@
     padding: 0;
     box-sizing: border-box
 }
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------- CSS PARA EL HEADER -------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-
-/* header{
-    background-color: #8B9E70; 
-} */
-
 .header__gridContainer{
     display: grid;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto;
     grid-template-columns: 100%;
-    grid-template-areas: 
-        "headerFixed"
+    grid-template-areas:
         "headerInfo"
         "headerImgs"
         "headerButtons";
@@ -41,7 +24,6 @@
     position: fixed;
     z-index: 5;
     background-color: #8B9E70;
-    grid-area: headerFixed;
     height: auto;
     display: flex;
     align-items: center;
@@ -53,7 +35,7 @@
         width: 60%;
         min-width: 150px;
         max-width: 50%;
-    }
+}
 
 .header__fiexed__tools{
     width: 100%;
@@ -75,14 +57,18 @@
 .header__menu ul{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-decoration: none;
     align-items: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: small;
+    margin: 2px;
+    width: 100%;
+    padding: 0;
     
 }
 
 .header__menu__item{
-
     padding: 0 2%;
 }
 
@@ -99,22 +85,89 @@
 
 }
 
+/* -------------------------BARRA DE NAVEGACION DROPDOWN */  
+.header__dropdownMenu{
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;  
+}
+
+.header__dropdownMenu:hover{
+    background: #424b37; 
+}
+
+.header__dropdownMenu:focus{
+    background: transparent; 
+}
+
+
+.header__dropdownMenu__nav{
+    background-color: #768561;
+    width: 50%;
+    text-align: center;
+    border: solid 1px #424b37;
+}
+
+.header__dropdownMenu__nav a{
+    text-decoration: none;
+}
+
+
+
+/* ----------------BOTONES DEL DROPDOWN */
+.header__dropdownMenu__nav__linkBtn{
+    padding: 1%;
+    width: 70%;
+    border-radius: 15px;
+    margin: 1% 15%;
+    color: #fff;
+}
+
+.header__dropdownMenu__nav__linkBtn:hover{
+    background-color: #424b37;
+    color: #fff;
+}
+
+.header__dropdownMenu__nav__loginBtn{
+    padding: 1%;
+    width: 80%;
+    border-radius: 15px;
+    margin: 5% 10%;
+    border:solid 1px #424b37;
+    background-color: #424b37;
+    color: white;
+}
+
+.header__dropdownMenu__nav__loginBtn:hover{
+    background-color: #3a422f;
+    color: white;
+}
+
+
+
+
+
+
 /* -------------------BARRA DE BUSQUEDA DEL HEADER */
 .header__searchBar{
     width: 40%;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: small;
     right: 0;
     background-color: rgba(209, 205, 205, 0.685);
     border: solid 1px white;
     border-radius: 20px;
+
 }
 
 .header__searchButton{
     font-family: 'Heebo', sans-serif;
     font-weight: 600;
-    font-size: 80%;
+    font-size: small;
     padding: 5px 10px;
     color: white;
     border: solid 1px white;
@@ -136,7 +189,8 @@
     border:solid 1px #424b37;
     background-color: #424b37;
     color: white;
-    font-weight:600;
+    font-family: 'Heebo', sans-serif;
+    font-size: small;
     cursor: pointer;
     display: none;
 }
@@ -287,8 +341,7 @@
     align-items: center;
     justify-content: center;
     height: auto;
-    margin-bottom: 10%;
-
+    margin: 2% 5vw 10% 5vw;
 }
 .main__newArrivals__item{
     width: 9rem;
@@ -332,17 +385,21 @@
 
 .main__categories{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     border-style: ridge;
-    height: auto;
+    height: 100vw;
     width: auto;
-    margin-bottom: 10%;
-    
+    margin: 2% 5vw 10% 5vw; 
+    row-gap: 1%;
+    position: relative;
 }
 
 .main__categories__category{
- width: 100%;
- padding: 5% 0%;
+    padding-bottom: 1%;
+    position: absolute;
+    background-color: #fff;
 }
 
 .main__categories__category__tittle{
@@ -354,6 +411,7 @@
 
 .main__categories__category__img{
     width: 100%;
+    max-width: 90vw;
 }
 
 
@@ -692,10 +750,9 @@ footer section div {
     /* ----------------------REORDENO EL GRID DEL HEADER*/
     .header__gridContainer{
         background-color: #8B9E70;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto;
         grid-template-columns: 1.2fr 2fr;
         grid-template-areas: 
-            "headerFixed    headerFixed"
             "headerInfo     headerImgs"
             "headerButtons  headerImgs";
         margin-bottom: 150px;
@@ -706,6 +763,7 @@ footer section div {
     i#menu{
         display: none;
     }
+
 
     /* ----------------------MOSTRAR NAV*/
     .header__menu{
@@ -746,7 +804,6 @@ footer section div {
         margin-top: 108px;
         padding: 2% 0;
         padding-left: 10vw;
-
         height: 70%;
     }
 
@@ -815,15 +872,28 @@ footer section div {
     /* ----------------------------------------------RESPONSIVE DEL MAIN */
     /* ----------------------------------------------------------------- */
 
+     /* -------------------------INDEX*/
+    .main__newArrivals{
+        margin: 2% 10vw 10% 10vw;
+    }
 
+    .main__categories{
+        margin: 2% 10vw 10% 10vw;
+        
+    }
+
+
+     /* -------------------------AYUDA*/
     .main__helpContainer{
         margin: 2% 10vw 5% 10vw;
     }
 
+    /* -------------------------SOBRE NOSOTROS*/
     .main__aboutUsContainer{
         padding: 2% 10vw;
     }
 
+    /* -------------------------CONTACTO*/    
     .main__contactContainer{
         margin: 2% 10vw 5% 10vw;
     }
