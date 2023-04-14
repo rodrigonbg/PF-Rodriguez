@@ -732,7 +732,10 @@ footer section div {
     font-family: 'Heebo', sans-serif;
 }
 
-
+/* -------------------------BORDE DEL HEADER*/
+.footer__waves{
+    width: 100vw;
+}
 
 
 
