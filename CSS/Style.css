@@ -83,7 +83,7 @@
 
 .header__menu__item{
 
-    padding: 1% 2%;
+    padding: 0 2%;
 }
 
 .header__menu__item a{
@@ -96,7 +96,7 @@
     width: 100%;
     height: auto;
     border-radius: 10PX;
-    padding: 0.3%;
+
 }
 
 /* -------------------BARRA DE BUSQUEDA DEL HEADER */
@@ -242,8 +242,12 @@
 
 
 
+/* -------------------------BORDE DEL HEADER*/
+.header__waves{
+    width: 100vw;
+    padding-top: 50px;
 
-
+}
 
 
 
@@ -264,10 +268,6 @@
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------- CSS PARA EL MAIN y CONTENIDO (INDEX) -------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-
-body main{
-    padding: 3% 5%;
-}
 
 .main__tittle{
     margin: 1rem ;
@@ -357,6 +357,33 @@ body main{
 }
 
 
+/* ----------------------------------------------------------------- */
+/* -----------------------------------------------------------TEXTOS */
+/* ----------------------------------------------------------------- */
+
+main h2{/* Titulos H2 */
+    margin: 20px ;
+    color: black;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 400%;
+}
+
+main h3{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 150%;
+}
+
+.main__parrafos{
+    text-align: justify;
+    font-family: 'Dosis', sans-serif;
+    font-size: larger;
+    margin-bottom: 40px;
+}
+
+
 
 
 
@@ -382,8 +409,17 @@ body main{
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------- CSS PARA EL MAIN y CONTENIDO (CONTACTO) ----------------------------------------------------------- */
+/* --------------------------------------------------------------------------- CSS PARA EL MAIN y CONTENIDO (SOBRE NOSOTROS) ----------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.main__aboutUsContainer{
+    padding: 2% 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 
 
 
@@ -393,6 +429,162 @@ body main{
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------- CSS PARA EL MAIN y CONTENIDO (AYUDA) -------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.main__helpContainer{
+    text-align: center;
+    margin: 2% 5vw 5% 5vw;
+}
+
+
+/* ---------------------SECCIONES DE OPCIONES DE AYUDA*/
+.main__helpContainer__section{
+    margin: 5% 0;
+}
+.main__helpContainer__section form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    
+}
+
+#searchSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* ---------------------BOTONES DE AYUDA*/
+.main__helpContainer__section__button{
+    width: 100%;
+    padding: 1%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    background-color: #8B9E70;;
+    border: solid 1px #8B9E70;
+    cursor: pointer;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 600;
+    font-size: 120%;
+    border-radius: 20px;
+}
+.main__helpContainer__section__button:hover{
+    background-color: #a3b887;
+}
+
+
+.main__helpContainer__section__searchButton{
+    cursor: pointer;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 600;
+    font-size: 80%;
+    padding: 1%;
+    border: solid 1px black;
+    border-radius: 20px;
+    background-color: rgba(209, 205, 205, 0.459);
+}
+.main__helpContainer__section__searchButton:hover{
+    background-color: rgba(209, 205, 205, 0.685);
+}
+
+
+/* ---------------------BARRA DE BUSQUEDA DE AYUDA*/
+.main__helpContainer__section__searchBar{
+    width: 93%;
+    text-align: center;
+    padding: 1%;
+    background-color: rgba(209, 205, 205, 0.459);
+    border: solid 1px black;
+    border-radius: 20px;
+}
+
+.main__helpContainer__section__searchBar:hover{
+    background-color: rgba(209, 205, 205, 0.685);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- CSS PARA EL MAIN y CONTENIDO (CONTACTO) ----------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------CONTENEDORES DEL FORMULARIO DE AYUDA*/
+.main__contactContainer{
+    margin: 2% 5vw 5% 5vw;
+    
+}
+
+.main__contactContainer__fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    text-align: center;
+
+}
+
+/* -----------------ELEMENTOS DEL FORMULARIO DE AYUDA*/
+.main__contact__label{
+    font-family: 'Heebo', sans-serif;
+    font-size: 100%;
+    text-align: center;
+}
+
+.main__contact__TextField{
+     font-family: 'Heebo', sans-serif;
+    font-size: 100%;
+    border-radius: 20px;
+    color: #8B9E70;
+    border: solid 1px black;
+    padding: 1%;
+    width: 100%;
+    background-color: #d8eeba;    
+    margin-bottom: 5%;
+}
+.main__contact__TextField:hover{
+   color: #000000;
+   background-color: #9baf80bb;    
+}
+.main__contact__TextField:focus{
+    color: #000000;
+    background-color: #9baf80bb;    
+ }
+
+
+.main__contact__SubmitButton{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 600;
+    font-size: 100%;
+    padding: 0.5%;
+    border: solid 1px black;
+    border-radius: 20px;
+    background-color: rgba(209, 205, 205, 0.459);
+    width: 40%;
+    cursor: pointer;
+}
+
+.main__contact__SubmitButton:hover{
+        background-color: rgba(209, 205, 205, 0.685);
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -428,6 +620,7 @@ body main{
 
 footer section div {
     border: solid 1px rgb(255, 255, 255);
+    padding: 2%;
     
 }
 .footer__socialNetworks{
@@ -539,10 +732,9 @@ footer section div {
     }
 
 
-
     /* --------------AJUSTAR PARTE FIJA DEL HEADER*/
     .header__fixed{
-        padding: 10px 10% 5px 10%;
+        padding: 5px 10% 5px 10%;
 
     }
 
@@ -608,9 +800,33 @@ footer section div {
         background-color: transparent;
         font-weight:600;
     }
-       
+    
+    /* -------------------------BORDE DEL HEADER*/
+    .header__waves{
+    padding-top: 0;
+
+    }
 
 
+
+
+
+    /* ----------------------------------------------------------------- */
+    /* ----------------------------------------------RESPONSIVE DEL MAIN */
+    /* ----------------------------------------------------------------- */
+
+
+    .main__helpContainer{
+        margin: 2% 10vw 5% 10vw;
+    }
+
+    .main__aboutUsContainer{
+        padding: 2% 10vw;
+    }
+
+    .main__contactContainer{
+        margin: 2% 10vw 5% 10vw;
+    }
 
 
 
@@ -665,6 +881,7 @@ footer section div {
     .header__info{
         height: 70%;
     }
+
 
 }
 

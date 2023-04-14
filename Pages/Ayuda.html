@@ -16,57 +16,72 @@
 </head>
 <body>
     <header>
-        <section class="headerFixed">
-            <div><!-- Logotipo -->
-                <a href="../index.html"><img class="logoPrincipal" src="../Logotipos/Logo-Fantasy-white.png" alt="Logotipo"></a>
-            </div>
-            <nav>
-                <ul id="menuPrincipal"><!-- Barra de navegación -->
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="Fornitures.html">Fornitures</a></li>
-                    <li><a href="Sobre-nosotros.html">Sobre nosotros</a></li>
-                    <li><a class="itemSeleccionado" href="Ayuda.html">Ayuda</a></li>
-                    <li><a href="Contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        
-            <div> <!-- login y carrito -->
-                <Form>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <input class="buttonLogin" type="button" value="Login">
-                </Form>
-            </div>
+        <section class="header__fixed">
+            <a href="../index.html">
+                <img class="header__logo" src="../Logotipos/Logo-Fantasy-white.png" alt="Logotipo">
+            </a>
+            <span class="header__fiexed__tools">
+                <nav class="header__menu">
+                    <ul><!-- Barra de navegación -->
+                        <li class="header__menu__item" ><a href="../index.html">Inicio</a></li>
+                        <li class="header__menu__item" ><a href="Fornitures.html">Fornitures</a></li>
+                        <li class="header__menu__item" ><a href="Sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li class="header__menu__item" ><a class="header__menu__item__selected" href="Ayuda.html">Ayuda</a></li>
+                        <li class="header__menu__item" ><a href="Contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            
+                <!-- Buscador -->
+                <input class="header__searchBar" type="text" name="buscador" placeholder="Buscar">
+
+                <!-- Boton del Buscador -->
+                <input class="header__searchButton" type="button" value="buscar">
+
+                <!-- carrito -->
+                <i id="car" class="fa-solid fa-cart-shopping "></i>
+                
+                <!-- Boton de menú -->
+                <i id="menu" class="fa-solid fa-bars fa-2x"></i>
+                
+                <!-- login -->
+                <input class="header__loginButton" type="button" value="Login">
+            </span>
         </section>
+        <img class="header__waves" src="../Imagenes/Waves-Header.png" alt="borde del header">
     </header>
-    <img id="bordeHeader" src="../Imagenes/WavesHeader.png" alt="borde del header">
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <main id="ayuda" class="formularioAyuda">
-        <h2>¿Con qué podemos ayudarte?</h2>
-        <section>
-            <form action=""><!-- Buscador de ayuda-->
-                <input class="buscadorAyuda" type="text" name="buscador" placeholder="Buscar">
-                <input class="botonBuscarAyuda" type="button" value="Buscar">
-            </form>
-        </section>    
-        <section>
-                <h3>Compras</h3>
-                <Form>
-                    <div><input class="buttonsAyuda" type="button" value="Devoluciones de productos"></div>
-                    <div></div><input class="buttonsAyuda" type="button" value="Reembolso de dinero"></div>
-                    <div></div><input class="buttonsAyuda" type="button" value="Envios"></div>
-                    <div></div><input class="buttonsAyuda" type="button" value="Preguntas frecuentes"></div>
-                </Form>
-        </section>
-        <section>
-                <h3>Cuenta</h3>
-                <Form>
-                    <div></div><input class="buttonsAyuda"type="button" value="Seguridad"></div>
-                    <div></div><input class="buttonsAyuda" type="button" value="Configuración"></div>
-                </Form>
-        </section>
+    <main>
+        <div class="main__helpContainer">
+            <h2>¿Con qué podemos ayudarte?</h2>
+
+            <section class="main__helpContainer__section">
+                <form id="searchSection" action=""><!-- Buscador de ayuda-->
+                    <input class="main__helpContainer__section__searchBar" type="text" name="buscador" placeholder="Buscar">
+                    <input class="main__helpContainer__section__searchButton" type="button" value="Buscar">
+                </form>
+            </section>    
+
+            <section class="main__helpContainer__section">
+                    <h3>Compras</h3>
+                    <Form>
+                        <input class="main__helpContainer__section__button" type="button" value="Devoluciones de productos">
+                        <input class="main__helpContainer__section__button" type="button" value="Reembolso de dinero">
+                        <input class="main__helpContainer__section__button" type="button" value="Envios">
+                        <input class="main__helpContainer__section__button" type="button" value="Preguntas frecuentes">
+                    </Form>
+            </section>
+
+            <section class="main__helpContainer__section">
+                    <h3>Cuenta</h3>
+                    <Formn>
+                        <input class="main__helpContainer__section__button"type="button" value="Seguridad">
+                        <input class="main__helpContainer__section__button" type="button" value="Configuración">
+                    </Formn>
+            </section>
+        </div>
     </main>
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <footer >
+    <footer>
         <section class="footer__gridContainer">
             <div class="footer__socialNetworks"> <!-- Seccion de las redes sociales -->
                     <h4 class="footer__tittle">Redes Sociales</h4>

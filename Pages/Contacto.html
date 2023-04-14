@@ -16,55 +16,66 @@
 </head>
 <body>
     <header>
-        <section class="headerFixed">
-            <div><!-- Logotipo -->
-                <a href="../index.html"><img class="logoPrincipal" src="../Logotipos/Logo-Fantasy-white.png" alt="Logotipo"></a>
-            </div>
-            <nav>
-                <ul id="menuPrincipal"><!-- Barra de navegación -->
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="Fornitures.html">Fornitures</a></li>
-                    <li><a href="Sobre-nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="Ayuda.html">Ayuda</a></li>
-                    <li><a class="itemSeleccionado" href="Contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <div> <!-- login y carrito -->
-                <Form>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <input class="buttonLogin" type="button" value="Login">
-                </Form>
-            </div>
+        <section class="header__fixed">
+            <a href="../index.html">
+                <img class="header__logo" src="../Logotipos/Logo-Fantasy-white.png" alt="Logotipo">
+            </a>
+            <span class="header__fiexed__tools">
+                <nav class="header__menu">
+                    <ul><!-- Barra de navegación -->
+                        <li class="header__menu__item" ><a href="../index.html">Inicio</a></li>
+                        <li class="header__menu__item" ><a href="Fornitures.html">Fornitures</a></li>
+                        <li class="header__menu__item" ><a href="Sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li class="header__menu__item" ><a href="Ayuda.html">Ayuda</a></li>
+                        <li class="header__menu__item" ><a class="header__menu__item__selected" href="Contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            
+                <!-- Buscador -->
+                <input class="header__searchBar" type="text" name="buscador" placeholder="Buscar">
+
+                <!-- Boton del Buscador -->
+                <input class="header__searchButton" type="button" value="buscar">
+
+                <!-- carrito -->
+                <i id="car" class="fa-solid fa-cart-shopping "></i>
+                
+                <!-- Boton de menú -->
+                <i id="menu" class="fa-solid fa-bars fa-2x"></i>
+                
+                <!-- login -->
+                <input class="header__loginButton" type="button" value="Login">
+            </span>
         </section>
+        <img class="header__waves" src="../Imagenes/Waves-Header.png" alt="borde del header">
     </header>
-    <img id="bordeHeader" src="../Imagenes/WavesHeader.png" alt="borde del header">
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <main id="contacto">
-        <h2>Contactanos</h2>
-        <div class="formularioContacto">
-            <form action="">
+        <div class="main__contactContainer">
+            <h2>Contactanos</h2>
+            <form class="main__contactContainer__fields" action="">
                 <div>
-                    <label class="labels" for="nombre">Nombre:</label>
-                    <input class="camposTextoContacto" type="text" placeholder="ej.: Rodrigo Rodriguez" name="nombre" required>
+                    <label class="main__contact__label" for="nombre">Nombre:</label>
+                    <input class="main__contact__TextField" type="text" placeholder="ej.: Rodrigo Rodriguez" name="nombre" required>
                 </div>
                 <div>
-                    <label class="labels" for="email">Email:</label>
-                    <input class="camposTextoContacto" type="email" placeholder="ej.: Rodrigonbg@hotmail.com" name="email" required>
+                    <label class="main__contact__label" for="email">Email:</label>
+                    <input class="main__contact__TextField" type="email" placeholder="ej.: Rodrigonbg@hotmail.com" name="email" required>
                 </div>    
                 <div>
-                    <label class="labels" for="telefono">Telefono:</label>
-                    <input class="camposTextoContacto" type="number" placeholder="ej.: +598092987977" name="telefono" required>
+                    <label class="main__contact__label" for="telefono">Telefono:</label>
+                    <input class="main__contact__TextField" type="number" placeholder="ej.: +598092987977" name="telefono" required>
                 </div>
                 <div>
-                    <label class="labels" for="asunto">Asunto:</label>
-                    <input class="camposTextoContacto" type="text" placeholder="ej.: Producto defectuso" name="asunto" required>
+                    <label class="main__contact__label" for="asunto">Asunto:</label>
+                    <input class="main__contact__TextField" type="text" placeholder="ej.: Producto defectuso" name="asunto" required>
                 </div>
                 <div>
-                    <label class="labels" for="comentario">Comentario:</label>
-                    <textarea class="camposTextoContacto" name="comentario" id="" cols="30" rows="10" required></textarea>
+                    <label class="main__contact__label" for="comentario">Comentario:</label>
+                    <textarea class="main__contact__TextField" name="comentario" id="" cols="30" rows="10" required></textarea>
                 </div>
                 <div>
-                    <input class="botonEnviar" type="submit" value="Enviar">
+                    <input class="main__contact__SubmitButton" type="submit" value="Enviar">
                 </div>
             </form>
         </div>
