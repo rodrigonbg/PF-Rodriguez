@@ -1,0 +1,69 @@
+/* ------------------CONTENEDORES DEL FORMULARIO DE AYUDA*/
+.main__contactContainer{
+    margin: 2% 5vw 5% 5vw;
+    
+}
+
+.main__contactContainer__fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    text-align: center;
+
+}
+
+/* -----------------ELEMENTOS DEL FORMULARIO DE AYUDA*/
+.main__contact__label{
+    font-family: $font-family1;
+    font-size: 100%;
+    text-align: center;
+}
+
+.main__contact__TextField{
+     font-family: $font-family1;
+    font-size: 100%;
+    border-radius: 20px;
+    color: #8B9E70;
+    border: solid 1px black;
+    padding: 1%;
+    width: 100%;
+    background-color: #d8eeba;    
+    margin-bottom: 5%;
+    &:focus{
+        color: #000000;
+        background-color: #9baf80bb; 
+    }
+    &:hover{
+        color: #000000;
+        background-color: #9baf80bb;
+    }
+}
+
+.main__contact__SubmitButton{
+    font-family: $font-family1;
+    font-weight: 600;
+    font-size: 100%;
+    padding: 0.5%;
+    border: solid 1px black;
+    border-radius: 20px;
+    background-color: rgba(209, 205, 205, 0.459);
+    width: 40%;
+    cursor: pointer;
+    &:hover{
+        background-color: rgba(209, 205, 205, 0.685); 
+    }
+}
+
+/* -----------------TITULOS Y TEXTOS*/
+main#contacto{
+    h1{/* Titulos H1 */
+        font: $h1-mobile;
+        margin: 20px 0 ;
+        color: black;
+        text-align: center;
+        width: 100%;
+    }
+    h2{
+        font: $h2-mobile;
+    }
+}

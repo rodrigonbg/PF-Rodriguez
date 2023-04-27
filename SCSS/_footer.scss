@@ -1,0 +1,67 @@
+footer{
+    section{
+        div{
+            border: solid 1px rgb(255, 255, 255);
+            padding: 2%;
+        }
+    }
+}
+
+.footer__gridContainer{
+    background-color:#C2C2C2;
+    padding: 2% 5%;
+    text-align: center;
+    font-size: small;
+    font-family: $font-family1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "payments       payments"
+        "footerInfo     footerInfo"
+        "socialNetworks newsLetter";
+    align-items: stretch;
+    grid-gap: 1%;
+}
+
+.footer__socialNetworks{
+    grid-area: socialNetworks;
+    padding: 1%;
+    border-right: solid 1px rgb(255, 255, 255);
+}
+
+.footer__payments{
+    grid-area: payments;
+    width: 100%;
+    img{
+        padding: 1%; 
+    }
+}
+
+.footer__info{
+    grid-area: footerInfo;
+    word-wrap: break-word;
+}
+
+.footer__newsLetter{
+    grid-area: newsLetter;
+    word-wrap: break-word;
+    padding-bottom: 5%;
+}
+
+.footer__tittle{
+    font-size: medium;
+    font-weight: 500;
+    font-family: $font-family1;
+}
+
+.footer__texto{
+    font-size: small;
+    font-weight: 200;
+    font-family: $font-family1;
+}
+
+/* -------------------------BORDE DEL HEADER*/
+.footer__waves{
+    width: 100vw;
+}

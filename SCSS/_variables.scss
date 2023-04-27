@@ -1,0 +1,40 @@
+/*-------------------Paleta de colores*/
+$primary-color: #8B9E70;
+
+$btn-darkGreen:#424b37;
+$btn-darkGreen-hoven:#3a422f;
+
+$a-darkGreen-selected:#3a422f;
+$a-darkGreen-hoven:#3a422f;
+
+$gray-footer: #C2C2C2;
+
+
+/* ---------------------------------------------------- */
+/*----------------------------------TIPOGRAFIAS Y TEXTOS*/
+/* ---------------------------------------------------- */
+$font-family1:'Heebo', sans-serif;
+$font-family2: 'Dosis', sans-serif;
+
+
+/* ---------------------------------INDEX */
+/* MOBILE */
+$h2-mobile-index:normal 400 250% $font-family2;
+$h3-mobile-index:normal 500 150% $font-family1;
+$p-mobile-index:aa;
+
+/* ---------------------------------PAGES */
+/* MOBILE */
+$h1-mobile:normal 400 250% $font-family2;
+$h2-mobile:normal 200 150% $font-family2;
+$p-mobile:aa;
+
+/* TABLET */
+$h1-tablet:normal 400 300% $font-family2;
+$h2-tablet:normal 200 200% $font-family2;
+$p-tablet:aa;
+
+/* DESKTOP */
+$h1-desktop:normal 400 400% $font-family2;
+$h2-desktop:normal 200 200% $font-family2;
+$p-desktop:aa;
