@@ -4,7 +4,13 @@
   "description": "E-commerce de muebles y articulos de decoración como proyecto de coderhous.",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1"
+=======
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "sass --watch scss:css"
+
+>>>>>>> Proyecto-con-sass
   },
   "author": "",
   "license": "ISC"

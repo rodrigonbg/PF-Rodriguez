@@ -29,7 +29,7 @@
             <span class="header__fiexed__tools">
                 <nav class="header__menu">
                     <ul><!-- Barra de navegación -->
-                        <li class="header__menu__item" ><a class="header__menu__item__selected" href="index.html">Inicio</a></li>
+                        <li class="header__menu__item" ><a id="selected" href="index.html">Inicio</a></li>
                         <li class="header__menu__item" ><a href="Pages/Furnitures.html">Furnitures</a></li>
                         <li class="header__menu__item" ><a href="Pages/Sobre-nosotros.html">Sobre nosotros</a></li>
                         <li class="header__menu__item" ><a href="Pages/Ayuda.html">Ayuda</a></li>
@@ -54,7 +54,7 @@
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start header__dropdownMenu__nav">
                         <li>
                             <a href="index.html">
-                                <button class="dropdown-item header__dropdownMenu__nav__linkBtn header__dropdownMenu__nav__linkBtn__selected" type="button">Inicio</button>
+                                <button id="selected" class="dropdown-item header__dropdownMenu__nav__linkBtn" type="button">Inicio</button>
                             </a>
                         </li>
 
@@ -104,79 +104,74 @@
             </section>
 
             <section class="header__buttons"><!-- Botones buy now, explore-->
-                    <input class="header_buyNowButton" type="button" value="Buy Now">
+                    <input class="header__buyNowButton" type="button" value="Buy Now">
                     <input class="header__ExploreButton" type="button" value="Explore">
             </section>
         </section>
     </header>
-    <!-- <img id="bordeHeader" src="../Imagenes/WavesHeader.png" alt="borde del header"> -->
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <main> 
+    <main id="index"> 
+        <div class="main__indexContainer">
+            <h2>New arrivals</h2>
+            <section class="main__newArrivals"><!-- Sección de destacados -->
+                <div class="main__newArrivals__item">
+                    <img src="Imagenes/destacado1.jpg" alt="destacados1">
+                    <p class="main__newArrivals__item__info">Macetas: </p>
+                    <p class="main__newArrivals__item__price">$599</p>
+                </div>
+                <div class="main__newArrivals__item">
+                    <img src="Imagenes/destacado2.jpg" alt="destacados2">
+                    <p class="main__newArrivals__item__info">Macetas: </p>
+                    <p class="main__newArrivals__item__price">$499</p>
+                </div>
+                <div class="main__newArrivals__item">
+                    <img src="Imagenes/destacado3.jpg" alt="destacados3">
+                    <p class="main__newArrivals__item__info">Mesita: </p>
+                    <p class="main__newArrivals__item__price">$1699</p>
+                </div>
+                <div class="main__newArrivals__item">
+                    <img src="Imagenes/destacado4.png" alt="destacados4">
+                    <p class="main__newArrivals__item__info">Biblioteca: </p>
+                    <p class="main__newArrivals__item__price">$1999</p>
+                </div>
+                <div class="main__newArrivals__item">
+                    <img src="Imagenes/destacado5.png" alt="destacados5">
+                    <p class="main__newArrivals__item__info">Biblioteca: </p>
+                    <p class="main__newArrivals__item__price">$1899</p>
+                </div>
+                <div class="main__newArrivals__item">
+                    <img src="Imagenes/destacado6.png" alt="destacados6">
+                    <p class="main__newArrivals__item__info">Sofa un cuerpo: </p>
+                    <p class="main__newArrivals__item__price">$6500</p>
+                </div>  
+                <div class="main__newArrivals__item">
+                    <img src="Imagenes/destacado7.jpg" alt="destacados7">
+                    <p class="main__newArrivals__item__info">Boxes decoración: </p>
+                    <p class="main__newArrivals__item__price">$2599</p>
+                </div>  
+                <div class="main__newArrivals__item">
+                    <img src="Imagenes/destacado8.png" alt="destacados8">
+                    <p class="main__newArrivals__item__info">Lampara de pie: </p>
+                    <p class="main__newArrivals__item__price">$1599</p>
+                </div>  
+            </section>
 
-        <h2 class="index__tittle">New arrivals</h2>
-        <section class="main__newArrivals"><!-- Sección de destacados -->
-            <div class="main__newArrivals__item">
-                <img src="Imagenes/destacado1.jpg" alt="destacados1">
-                <p class="main__newArrivals__item__info">Macetas: </p>
-                <p class="main__newArrivals__item__price">$599</p>
-            </div>
-            <div class="main__newArrivals__item">
-                <img src="Imagenes/destacado2.jpg" alt="destacados2">
-                <p class="main__newArrivals__item__info">Macetas: </p>
-                <p class="main__newArrivals__item__price">$499</p>
-            </div>
-            <div class="main__newArrivals__item">
-                <img src="Imagenes/destacado3.jpg" alt="destacados3">
-                <p class="main__newArrivals__item__info">Mesita: </p>
-                <p class="main__newArrivals__item__price">$1699</p>
-            </div>
-            <div class="main__newArrivals__item">
-                <img src="Imagenes/destacado4.png" alt="destacados4">
-                <p class="main__newArrivals__item__info">Biblioteca: </p>
-                <p class="main__newArrivals__item__price">$1999</p>
-            </div>
-            <div class="main__newArrivals__item">
-                <img src="Imagenes/destacado5.png" alt="destacados5">
-                <p class="main__newArrivals__item__info">Biblioteca: </p>
-                <p class="main__newArrivals__item__price">$1899</p>
-            </div>
-            <div class="main__newArrivals__item">
-                <img src="Imagenes/destacado6.png" alt="destacados6">
-                <p class="main__newArrivals__item__info">Sofa un cuerpo: </p>
-                <p class="main__newArrivals__item__price">$6500</p>
-            </div>  
-            <div class="main__newArrivals__item">
-                <img src="Imagenes/destacado7.jpg" alt="destacados7">
-                <p class="main__newArrivals__item__info">Boxes decoración: </p>
-                <p class="main__newArrivals__item__price">$2599</p>
-            </div>  
-            <div class="main__newArrivals__item">
-                <img src="Imagenes/destacado8.png" alt="destacados8">
-                <p class="main__newArrivals__item__info">Lampara de pie: </p>
-                <p class="main__newArrivals__item__price">$1599</p>
-            </div>  
-        </section>
-
-
-
-
-
-        <h2 class="index__tittle">Categorías</h2>
-        <section class="main__categories"><!-- Sección de categorías -->
-            <spam class="main__categories__category">
-                <h3 class="main__categories__category__tittle">Dormitorio</h3>
-                <img class="main__categories__category__img" src="Imagenes/dormitorio.png" alt="Dormitorio">
-            </spam>
-            <spam class="main__categories__category">
-                <h3 class="main__categories__category__tittle">Cocina</h3>
-                <img class="main__categories__category__img" src="Imagenes/cocina.jpg" alt="Cocina">
-            </spam>
-            <spam class="main__categories__category">
-                <h3 class="main__categories__category__tittle">Living</h3>
-                <img class="main__categories__category__img" src="Imagenes/living.jpg" alt="Living">
-            </spam>
-        </section>
-
+            <h2>Categorías</h2>
+            <section class="main__categories"><!-- Sección de categorías -->
+                <spam class="main__categories__category">
+                    <h3 class="main__categories__category__tittle">Dormitorio</h3>
+                    <img class="main__categories__category__img" src="Imagenes/dormitorio.png" alt="Dormitorio">
+                </spam>
+                <spam class="main__categories__category">
+                    <h3 class="main__categories__category__tittle">Cocina</h3>
+                    <img class="main__categories__category__img" src="Imagenes/cocina.jpg" alt="Cocina">
+                </spam>
+                <spam class="main__categories__category">
+                    <h3 class="main__categories__category__tittle">Living</h3>
+                    <img class="main__categories__category__img" src="Imagenes/living.jpg" alt="Living">
+                </spam>
+            </section>
+        </div>
     </main>
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <footer >
