@@ -1,6 +1,3 @@
-/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------- RESPONSIVE DESIGN --------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media (min-width:768px) or (orientation: landscape) {
 
     .header__imgs{
@@ -113,14 +110,6 @@
         align-items: flex-start;
 
     }
-
-    .header__buyNowButton{
-        margin: 1% 0;
-        border:solid 1px #424b37;
-        background-color: #424b37;
-        color: white;
-        font-weight:600;
-    }
     
     .header__ExploreButton{
         width: 70%;
@@ -128,8 +117,6 @@
         margin-left: 5%;
         border:solid 1px #fff;
         color: #fff;
-        background-color: transparent;
-        font-weight:600;
     }
     
     /* -------------------------BORDE DEL HEADER*/
@@ -220,6 +207,26 @@
 
     .footer__newsLetter{
         border: none;
+    }
+
+    .footer__tittle{
+        font:$h4-footer-desktop;
+    }
+
+    .footer__socialNetworks{
+        h5{
+            font: $h5-footer-desktop;
+        }
+    }
+    
+    .footer__info{
+        h5{
+            font: $h5-footer-desktop;
+        }
+    }
+    
+    .footer__texto{
+        font: $p-footer-desktop;
     }
 }
 

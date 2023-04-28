@@ -16,6 +16,9 @@
 /* MOBILE */
 /* TABLET */
 /* DESKTOP */
+/* --------------------------------FOOTER */
+/* MOBILE */
+/* DESKTOP */
 /* ---------------------------------------------------- */
 /*--------------------------------- MARGENES Y PADDINGS */
 /* ---------------------------------------------------- */
@@ -592,12 +595,12 @@ main#ayuda h2 {
   padding: 0.5%;
   border: solid 1px black;
   border-radius: 20px;
-  background-color: rgba(209, 205, 205, 0.459);
+  background-color: rgba(209, 205, 205, 0.685);
   width: 40%;
   cursor: pointer;
 }
 .main__contact__SubmitButton:hover {
-  background-color: rgba(209, 205, 205, 0.685);
+  background-color: rgba(167, 161, 161, 0.685);
 }
 
 /* -----------------TITULOS Y TEXTOS*/
@@ -639,6 +642,10 @@ footer section div {
   padding: 1%;
   border-right: solid 1px rgb(255, 255, 255);
 }
+.footer__socialNetworks h5 {
+  font: normal 400 medium "Heebo", sans-serif;
+  margin-bottom: 5px;
+}
 
 .footer__payments {
   grid-area: payments;
@@ -652,6 +659,9 @@ footer section div {
   grid-area: footerInfo;
   word-wrap: break-word;
 }
+.footer__info h5 {
+  font: normal 400 medium "Heebo", sans-serif;
+}
 
 .footer__newsLetter {
   grid-area: newsLetter;
@@ -660,15 +670,11 @@ footer section div {
 }
 
 .footer__tittle {
-  font-size: medium;
-  font-weight: 500;
-  font-family: "Heebo", sans-serif;
+  font: normal 600 medium "Heebo", sans-serif;
 }
 
 .footer__texto {
-  font-size: small;
-  font-weight: 200;
-  font-family: "Heebo", sans-serif;
+  font: normal 200 small "Heebo", sans-serif;
 }
 
 /* -------------------------BORDE DEL HEADER*/
@@ -679,9 +685,6 @@ footer section div {
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------- DISEÑO RESPONSIVE --------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------- RESPONSIVE DESIGN --------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media (min-width: 768px) or (orientation: landscape) {
   .header__imgs {
     top: 245px;
@@ -761,21 +764,12 @@ footer section div {
     justify-content: space-between;
     align-items: flex-start;
   }
-  .header__buyNowButton {
-    margin: 1% 0;
-    border: solid 1px #424b37;
-    background-color: #424b37;
-    color: white;
-    font-weight: 600;
-  }
   .header__ExploreButton {
     width: 70%;
     margin: 1% 0;
     margin-left: 5%;
     border: solid 1px #fff;
     color: #fff;
-    background-color: transparent;
-    font-weight: 600;
   }
   /* -------------------------BORDE DEL HEADER*/
   .header__waves {
@@ -840,6 +834,18 @@ footer section div {
   }
   .footer__newsLetter {
     border: none;
+  }
+  .footer__tittle {
+    font: normal 600 x-large "Heebo", sans-serif;
+  }
+  .footer__socialNetworks h5 {
+    font: normal 400 large "Heebo", sans-serif;
+  }
+  .footer__info h5 {
+    font: normal 400 large "Heebo", sans-serif;
+  }
+  .footer__texto {
+    font: normal 200 small "Heebo", sans-serif;
   }
 }
 /* -----------------------PEQUEÑOS AJUSTES EN OTRAS RESOLUCIONES*/

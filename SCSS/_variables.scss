@@ -4,7 +4,7 @@
 /* BACKGROUNDS */
 $primary-color: #8B9E70;
 $dropdownMenu-backround:#768561;
-$gray-footer: #C2C2C2;
+$backround-footer: #C2C2C2;
 
 /* BOTONES */
 $btn-darkGreen:#424b37;
@@ -32,6 +32,8 @@ $textField-text-color-hoven:#000000;
 $textField-color-focus:#9baf80bb;
 $textField-text-color-focus:#000000;
 
+$submitBtn-color: rgba(209, 205, 205, 0.685);
+$submitBtn-color-hoven:rgba(167, 161, 161, 0.685);
 
 /* ---------------------------------------------------- */
 /*-------------------------------- TIPOGRAFIAS Y TEXTOS */
@@ -61,6 +63,16 @@ $h1-desktop:normal 400 400% $font-family2;
 $h2-desktop:normal 200 200% $font-family2;
 $p-desktop:aa;
 
+/* --------------------------------FOOTER */
+/* MOBILE */
+$h4-footer-mobile:normal 600 medium $font-family1;
+$h5-footer-mobile:normal 400 medium $font-family1;
+$p-footer-mobile:normal 200 small $font-family1;
+
+/* DESKTOP */
+$h4-footer-desktop:normal 600 x-large $font-family1;
+$h5-footer-desktop:normal 400 large $font-family1;
+$p-footer-desktop:normal 200 small $font-family1;
 
 /* ---------------------------------------------------- */
 /*--------------------------------- MARGENES Y PADDINGS */

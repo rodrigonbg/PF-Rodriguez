@@ -8,7 +8,7 @@ footer{
 }
 
 .footer__gridContainer{
-    background-color:#C2C2C2;
+    background-color:$backround-footer;
     padding: 2% 5%;
     text-align: center;
     font-size: small;
@@ -28,6 +28,10 @@ footer{
     grid-area: socialNetworks;
     padding: 1%;
     border-right: solid 1px rgb(255, 255, 255);
+    h5{
+        font: $h5-footer-mobile;
+        margin-bottom: 5px;
+    }
 }
 
 .footer__payments{
@@ -41,6 +45,9 @@ footer{
 .footer__info{
     grid-area: footerInfo;
     word-wrap: break-word;
+    h5{
+        font: $h5-footer-mobile;
+    }
 }
 
 .footer__newsLetter{
@@ -50,15 +57,11 @@ footer{
 }
 
 .footer__tittle{
-    font-size: medium;
-    font-weight: 500;
-    font-family: $font-family1;
+    font:$h4-footer-mobile;
 }
 
 .footer__texto{
-    font-size: small;
-    font-weight: 200;
-    font-family: $font-family1;
+    font: $p-footer-mobile;
 }
 
 /* -------------------------BORDE DEL HEADER*/
