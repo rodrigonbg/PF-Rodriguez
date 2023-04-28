@@ -143,13 +143,8 @@
     /* ----------------------------------------------------------------- */
 
      /* -------------------------INDEX*/
-    .main__newArrivals{
-        margin: 2% 10vw 10% 10vw;
-    }
-
-    .main__categories{
-        margin: 2% 10vw 10% 10vw;
-        
+     .main__indexContainer{
+        margin: $margin-desktop-container;
     }
 
     .main__categories__category{
@@ -162,17 +157,22 @@
 
      /* -------------------------AYUDA*/
     .main__helpContainer{
-        margin: 2% 10vw 5% 10vw;
+        margin: $margin-desktop-container;
     }
 
     /* -------------------------SOBRE NOSOTROS*/
     .main__aboutUsContainer{
-        padding: 2% 10vw;
+        margin: $margin-desktop-container;
     }
 
     /* -------------------------CONTACTO*/    
     .main__contactContainer{
-        margin: 2% 10vw 5% 10vw;
+        margin: $margin-desktop-container;
+    }
+
+    /* -------------------------FURNITURES*/  
+    .main__furnituresContainer{
+        margin: $margin-desktop-container;
     }
 
     /* -------------------------TEXTOS DEL MAIN*/ 

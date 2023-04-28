@@ -1,21 +1,43 @@
-/*-------------------Paleta de colores*/
+/* ---------------------------------------------------- */
+/*----------------------------------- PALETA DE COLORES */
+/* ---------------------------------------------------- */
+/* BACKGROUNDS */
 $primary-color: #8B9E70;
+$dropdownMenu-backround:#768561;
+$gray-footer: #C2C2C2;
 
+/* BOTONES */
 $btn-darkGreen:#424b37;
 $btn-darkGreen-hoven:#3a422f;
+$btn-lightGreen: #8B9E70;
+$btn-lightGreen-hoven:#768561;
 
+/* SELECTORES A */
 $a-darkGreen-selected:#3a422f;
 $a-darkGreen-hoven:#3a422f;
 
-$gray-footer: #C2C2C2;
+/* BARRA DE BUSQUEDA */
+$SearchBar-color: rgba(209, 205, 205, 0.685);
+$SearchBar-color-hoven:rgba(167, 161, 161, 0.685);
+$SearchBtn-color: rgba(209, 205, 205, 0.685);
+$SearchBtn-color-hoven:rgba(167, 161, 161, 0.685);
+
+/* TEXT FIELDS */
+$textField-color:#cee7ab88;
+$textField-text-color:#8B9E70;
+
+$textField-color-hoven:#9baf80bb;
+$textField-text-color-hoven:#000000;
+
+$textField-color-focus:#9baf80bb;
+$textField-text-color-focus:#000000;
 
 
 /* ---------------------------------------------------- */
-/*----------------------------------TIPOGRAFIAS Y TEXTOS*/
+/*-------------------------------- TIPOGRAFIAS Y TEXTOS */
 /* ---------------------------------------------------- */
 $font-family1:'Heebo', sans-serif;
 $font-family2: 'Dosis', sans-serif;
-
 
 /* ---------------------------------INDEX */
 /* MOBILE */
@@ -38,3 +60,15 @@ $p-tablet:aa;
 $h1-desktop:normal 400 400% $font-family2;
 $h2-desktop:normal 200 200% $font-family2;
 $p-desktop:aa;
+
+
+/* ---------------------------------------------------- */
+/*--------------------------------- MARGENES Y PADDINGS */
+/* ---------------------------------------------------- */
+
+/* ------------------------------CONTAINERS */
+/* MOBILE */
+$margin-mobile-container:2% 5vw 10% 5vw;
+
+/* DESKTOP */
+$margin-desktop-container:2% 10vw 10% 10vw;

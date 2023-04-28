@@ -8,10 +8,6 @@
         "headerButtons";
 }
 
-header{
-    padding-bottom: 5%;
-}
-
 /* ---------------------------------------------------------------- */
 /* -------------------------------------------PARTE FIJA DEL HEADER */ 
 /* ---------------------------------------------------------------- */
@@ -88,7 +84,7 @@ header{
     margin: 0;
     border: none;  
     &:hover{
-        background: #424b37; 
+        background:$btn-darkGreen-hoven; 
     }
     &:focus{
         background: transparent;
@@ -96,7 +92,7 @@ header{
 }
 
 .header__dropdownMenu__nav{
-    background-color: #768561;
+    background-color: $dropdownMenu-backround;
     width: 50%;
     text-align: center;
     border: solid 1px #424b37;
@@ -113,7 +109,7 @@ header{
     margin: 1% 15%;
     color: #fff;
     &:hover{
-        background-color: #424b37;
+        background-color: $btn-darkGreen-hoven;
         color: #fff !important;    
     }
     &#selected{
@@ -146,9 +142,12 @@ header{
     font-family: $font-family1;
     font-size: small;
     right: 0;
-    background-color: rgba(209, 205, 205, 0.685);
+    background-color: $SearchBar-color;
     border: solid 1px white;
     border-radius: 20px;
+    &:hover{
+        background-color: $SearchBar-color-hoven;
+    }
 }
 
 .header__searchButton{
@@ -159,12 +158,12 @@ header{
     color: white;
     border: solid 1px white;
     border-radius: 20px;
-    background-color: rgba(209, 205, 205, 0.685);
+    background-color: $SearchBtn-color;
     cursor: pointer;
     display: none;
     order: 6;
     &:hover{
-        background-color: rgba(167, 161, 161, 0.685);
+        background-color: $SearchBtn-color-hoven;
     }
 }
 
@@ -267,12 +266,12 @@ header{
     margin: 1% 0;
     border-radius: 30px;
     border:solid 1px #424b37;
-    color: #424b37;
+    color: $btn-darkGreen;
     background-color: transparent;
     cursor: pointer;
     font-weight:600;
     &:hover{
-        background-color: #768561;
+        background-color: $btn-lightGreen-hoven;
         color: #fff;
     }
 }

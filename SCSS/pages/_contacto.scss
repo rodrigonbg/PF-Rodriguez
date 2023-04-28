@@ -1,7 +1,6 @@
 /* ------------------CONTENEDORES DEL FORMULARIO DE AYUDA*/
 .main__contactContainer{
-    margin: 2% 5vw 5% 5vw;
-    
+    margin: $margin-mobile-container; 
 }
 
 .main__contactContainer__fields{
@@ -23,19 +22,19 @@
      font-family: $font-family1;
     font-size: 100%;
     border-radius: 20px;
-    color: #8B9E70;
+    color: $textField-text-color;
     border: solid 1px black;
     padding: 1%;
     width: 100%;
-    background-color: #d8eeba;    
+    background-color: $textField-color;    
     margin-bottom: 5%;
     &:focus{
-        color: #000000;
-        background-color: #9baf80bb; 
+        color: $textField-text-color-focus;
+        background-color: $textField-color-focus; 
     }
     &:hover{
-        color: #000000;
-        background-color: #9baf80bb;
+        color: $textField-text-color-hoven;
+        background-color: $textField-color-hoven;
     }
 }
 

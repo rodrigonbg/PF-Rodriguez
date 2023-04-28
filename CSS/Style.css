@@ -1,13 +1,26 @@
 @charset "UTF-8";
-/*-------------------Paleta de colores*/
 /* ---------------------------------------------------- */
-/*----------------------------------TIPOGRAFIAS Y TEXTOS*/
+/*----------------------------------- PALETA DE COLORES */
+/* ---------------------------------------------------- */
+/* BACKGROUNDS */
+/* BOTONES */
+/* SELECTORES A */
+/* BARRA DE BUSQUEDA */
+/* TEXT FIELDS */
+/* ---------------------------------------------------- */
+/*-------------------------------- TIPOGRAFIAS Y TEXTOS */
 /* ---------------------------------------------------- */
 /* ---------------------------------INDEX */
 /* MOBILE */
 /* ---------------------------------PAGES */
 /* MOBILE */
 /* TABLET */
+/* DESKTOP */
+/* ---------------------------------------------------- */
+/*--------------------------------- MARGENES Y PADDINGS */
+/* ---------------------------------------------------- */
+/* ------------------------------CONTAINERS */
+/* MOBILE */
 /* DESKTOP */
 * {
   margin: 0;
@@ -27,10 +40,6 @@ body {
   grid-template-rows: auto auto auto;
   grid-template-columns: 100%;
   grid-template-areas: "headerInfo" "headerImgs" "headerButtons";
-}
-
-header {
-  padding-bottom: 5%;
 }
 
 /* ---------------------------------------------------------------- */
@@ -109,7 +118,7 @@ header {
   border: none;
 }
 .header__dropdownMenu:hover {
-  background: #424b37;
+  background: #3a422f;
 }
 .header__dropdownMenu:focus {
   background: transparent;
@@ -134,7 +143,7 @@ header {
   color: #fff;
 }
 .header__dropdownMenu__nav__linkBtn:hover {
-  background-color: #424b37;
+  background-color: #3a422f;
   color: #fff !important;
 }
 .header__dropdownMenu__nav__linkBtn#selected {
@@ -167,6 +176,9 @@ header {
   background-color: rgba(209, 205, 205, 0.685);
   border: solid 1px white;
   border-radius: 20px;
+}
+.header__searchBar:hover {
+  background-color: rgba(167, 161, 161, 0.685);
 }
 
 .header__searchButton {
@@ -305,12 +317,8 @@ header {
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------ CSS PARA EL MAIN y CONTENIDO (INDEX) --------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-.index__tittle {
-  margin: 1rem 0;
-  text-align: center;
-  font-family: "Heebo", sans-serif;
-  font-weight: 400;
-  font-size: 200%;
+.main__indexContainer {
+  margin: 2% 5vw 10% 5vw;
 }
 
 /* ----------------------------------------------------------------- */
@@ -322,7 +330,6 @@ header {
   align-items: center;
   justify-content: center;
   height: auto;
-  margin: 2% 5vw 10% 5vw;
 }
 
 .main__newArrivals__item {
@@ -372,7 +379,6 @@ header {
   flex-wrap: wrap;
   height: auto;
   width: auto;
-  margin: 2% 5vw 10% 5vw;
 }
 
 .main__categories__category {
@@ -418,6 +424,10 @@ main#index h2 {
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------- CSS PARA EL MAIN y CONTENIDO (FORNITURES) --------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.main__furnituresContainer {
+  margin: 2% 5vw 10% 5vw;
+}
+
 /* -----------------TITULOS Y TEXTOS*/
 main#furnitures h1 { /* Titulos H1 */
   font: normal 400 250% "Dosis", sans-serif;
@@ -434,7 +444,7 @@ main#furnitures h2 {
 /* --------------------------------------------- CSS PARA EL MAIN y CONTENIDO (SOBRE NOSOTROS) --------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .main__aboutUsContainer {
-  padding: 2% 5vw;
+  margin: 2% 5vw 10% 5vw;
   display: flex;
   flex-direction: column;
 }
@@ -456,7 +466,7 @@ main#sobreNosotros h2 {
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .main__helpContainer {
   text-align: center;
-  margin: 2% 5vw 5% 5vw;
+  margin: 2% 5vw 10% 5vw;
 }
 
 /* ---------------------SECCIONES DE OPCIONES DE AYUDA*/
@@ -491,7 +501,7 @@ main#sobreNosotros h2 {
   border-radius: 20px;
 }
 .main__helpContainer__section__button:hover {
-  background-color: #a3b887;
+  background-color: #768561;
 }
 
 .main__helpContainer__section__searchButton {
@@ -502,10 +512,10 @@ main#sobreNosotros h2 {
   padding: 1%;
   border: solid 1px black;
   border-radius: 20px;
-  background-color: rgba(209, 205, 205, 0.459);
+  background-color: rgba(209, 205, 205, 0.685);
 }
 .main__helpContainer__section__searchButton:hover {
-  background-color: rgba(209, 205, 205, 0.685);
+  background-color: rgba(167, 161, 161, 0.685);
 }
 
 /* ---------------------BARRA DE BUSQUEDA DE AYUDA*/
@@ -513,12 +523,12 @@ main#sobreNosotros h2 {
   width: 93%;
   text-align: center;
   padding: 1%;
-  background-color: rgba(209, 205, 205, 0.459);
+  background-color: rgba(209, 205, 205, 0.685);
   border: solid 1px black;
   border-radius: 20px;
 }
 .main__helpContainer__section__searchBar:hover {
-  background-color: rgba(209, 205, 205, 0.685);
+  background-color: rgba(167, 161, 161, 0.685);
 }
 
 /* -----------------TITULOS Y TEXTOS*/
@@ -538,7 +548,7 @@ main#ayuda h2 {
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* ------------------CONTENEDORES DEL FORMULARIO DE AYUDA*/
 .main__contactContainer {
-  margin: 2% 5vw 5% 5vw;
+  margin: 2% 5vw 10% 5vw;
 }
 
 .main__contactContainer__fields {
@@ -563,7 +573,7 @@ main#ayuda h2 {
   border: solid 1px black;
   padding: 1%;
   width: 100%;
-  background-color: #d8eeba;
+  background-color: rgba(206, 231, 171, 0.5333333333);
   margin-bottom: 5%;
 }
 .main__contact__TextField:focus {
@@ -775,10 +785,7 @@ footer section div {
   /* ----------------------------------------------RESPONSIVE DEL MAIN */
   /* ----------------------------------------------------------------- */
   /* -------------------------INDEX*/
-  .main__newArrivals {
-    margin: 2% 10vw 10% 10vw;
-  }
-  .main__categories {
+  .main__indexContainer {
     margin: 2% 10vw 10% 10vw;
   }
   .main__categories__category {
@@ -789,15 +796,19 @@ footer section div {
   }
   /* -------------------------AYUDA*/
   .main__helpContainer {
-    margin: 2% 10vw 5% 10vw;
+    margin: 2% 10vw 10% 10vw;
   }
   /* -------------------------SOBRE NOSOTROS*/
   .main__aboutUsContainer {
-    padding: 2% 10vw;
+    margin: 2% 10vw 10% 10vw;
   }
   /* -------------------------CONTACTO*/
   .main__contactContainer {
-    margin: 2% 10vw 5% 10vw;
+    margin: 2% 10vw 10% 10vw;
+  }
+  /* -------------------------FURNITURES*/
+  .main__furnituresContainer {
+    margin: 2% 10vw 10% 10vw;
   }
   /* -------------------------TEXTOS DEL MAIN*/
   main#index h2 { /* Titulos H2 */
