@@ -333,6 +333,94 @@ body {
 }
 
 /* ----------------------------------------------------------------- */
+/* --------------------------------------------SECCION DE OFERTAS */
+/* ----------------------------------------------------------------- */
+.product-inner-box img {
+  box-shadow: 0 33px 61px -29px rgba(0, 0, 0, 0.26);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.product-inner-box:hover {
+  box-shadow: 0 33px 61px -29px rgba(0, 0, 0, 0.5);
+}
+.product-inner-box:hover .cart-btn {
+  opacity: 1;
+}
+.product-inner-box:hover .icons {
+  transform: rotateY(-3%);
+  top: 3%;
+  opacity: 1;
+}
+.product-inner-box .icons {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  top: -3%;
+  right: 15px;
+  transition: all 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2 ease-in-out;
+  opacity: 0;
+}
+.product-inner-box .icons a {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #fff;
+}
+.product-inner-box .icons img {
+  box-shadow: 0 33px 61px -29px rgba(0, 0, 0, 0.26);
+}
+.product-inner-box .onsale .badge {
+  background: #000;
+  font-size: 12px;
+  padding: 5px 14px;
+  top: 0;
+  position: absolute;
+}
+.product-inner-box .onsale .badge:before {
+  border-width: 10px 0 0 10px;
+  border-color: transparent transparent transparent #000;
+  content: "";
+  position: absolute;
+  right: -8px;
+  width: 0;
+  bottom: 0;
+  border-style: solid;
+}
+.product-inner-box .onsale .badge:after {
+  border-width: 10px 8px 0 10px;
+  border-color: #000 transparent transparent;
+  content: "";
+  position: absolute;
+  right: -8px;
+  width: 0;
+  top: 0;
+  border-style: solid;
+}
+
+.cart-btn {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  left: 25%;
+  width: 50%;
+  opacity: 0;
+  color: #000;
+  transition: all 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2 ease-in-out;
+}
+.cart-btn:hover {
+  background: rgb(212, 210, 210) !important;
+}
+
+.fa-cart-shopping#articles {
+  color: #000;
+}
+
+/* ----------------------------------------------------------------- */
 /* --------------------------------------------SECCION DE DESTACADOS */
 /* ----------------------------------------------------------------- */
 .main__newArrivals {
