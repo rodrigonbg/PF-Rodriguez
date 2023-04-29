@@ -335,33 +335,35 @@ body {
 /* ----------------------------------------------------------------- */
 /* --------------------------------------------SECCION DE OFERTAS */
 /* ----------------------------------------------------------------- */
-.product-inner-box img {
-  box-shadow: 0 33px 61px -29px rgba(0, 0, 0, 0.26);
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+.main__onSale .main__onSale__item {
+  padding-bottom: 5%;
 }
-.product-inner-box:hover {
-  box-shadow: 0 33px 61px -29px rgba(0, 0, 0, 0.5);
+.main__onSale .main__onSale__item .main__onSale__item__innerBox {
+  position: relative;
+  /*             &:hover{
+                  box-shadow: 0 33px 61px -29px rgb(0 0 0 /50%);
+                  .cart-btn{
+                      opacity: 1;
+                  }
+
+                  .icons{
+                      transform: rotateY(-3%);
+                      top: 3%;
+                      opacity: 1;
+                  }
+              } */
 }
-.product-inner-box:hover .cart-btn {
-  opacity: 1;
-}
-.product-inner-box:hover .icons {
-  transform: rotateY(-3%);
-  top: 3%;
-  opacity: 1;
-}
-.product-inner-box .icons {
+.main__onSale .main__onSale__item .main__onSale__item__innerBox .icons {
+  position: absolute;
   display: flex;
   flex-direction: column;
   gap: 4px;
-  top: -3%;
+  top: 3%;
   right: 15px;
   transition: all 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2 ease-in-out;
-  opacity: 0;
+  opacity: 1;
 }
-.product-inner-box .icons a {
+.main__onSale .main__onSale__item .main__onSale__item__innerBox .icons a {
   height: 40px;
   width: 40px;
   display: flex;
@@ -371,17 +373,14 @@ body {
   border-radius: 50%;
   background: #fff;
 }
-.product-inner-box .icons img {
-  box-shadow: 0 33px 61px -29px rgba(0, 0, 0, 0.26);
-}
-.product-inner-box .onsale .badge {
+.main__onSale .main__onSale__item .main__onSale__item__innerBox .saleTag .badge {
   background: #000;
   font-size: 12px;
   padding: 5px 14px;
   top: 0;
   position: absolute;
 }
-.product-inner-box .onsale .badge:before {
+.main__onSale .main__onSale__item .main__onSale__item__innerBox .saleTag .badge:before {
   border-width: 10px 0 0 10px;
   border-color: transparent transparent transparent #000;
   content: "";
@@ -391,7 +390,7 @@ body {
   bottom: 0;
   border-style: solid;
 }
-.product-inner-box .onsale .badge:after {
+.main__onSale .main__onSale__item .main__onSale__item__innerBox .saleTag .badge:after {
   border-width: 10px 8px 0 10px;
   border-color: #000 transparent transparent;
   content: "";
@@ -401,25 +400,38 @@ body {
   top: 0;
   border-style: solid;
 }
-
-.cart-btn {
+.main__onSale .main__onSale__item .main__onSale__item__innerBox img {
+  box-shadow: 0 33px 61px -29px rgba(0, 0, 0, 0.26);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.main__onSale .main__onSale__item .main__onSale__item__innerBox .cart-btn {
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   text-align: center;
-  left: 25%;
-  width: 50%;
-  opacity: 0;
+  right: 0%;
+  width: 100%;
+  opacity: 1;
   color: #000;
   transition: all 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2 ease-in-out;
 }
-.cart-btn:hover {
+.main__onSale .main__onSale__item .main__onSale__item__innerBox .cart-btn:hover {
   background: rgb(212, 210, 210) !important;
 }
-
-.fa-cart-shopping#articles {
+.main__onSale .main__onSale__item .main__onSale__item__innerBox .cart-btn .fa-cart-shopping#articles {
   color: #000;
 }
-
+.main__onSale .main__onSale__item .main__onSale__item__info {
+  display: flex;
+  justify-content: space-between;
+}
+.main__onSale .main__onSale__item .main__onSale__item__info .item__name {
+  font-size: large;
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+  color: #464646;
+}
 /* ----------------------------------------------------------------- */
 /* --------------------------------------------SECCION DE DESTACADOS */
 /* ----------------------------------------------------------------- */
@@ -887,6 +899,27 @@ footer section div {
   /* -------------------------INDEX*/
   .main__indexContainer {
     margin: 2% 10vw 10% 10vw;
+  }
+  /* ITEMS DE OFERTA*/
+  .main__onSale__item__innerBox .icons {
+    opacity: 0 !important;
+  }
+  .main__onSale__item__innerBox .cart-btn {
+    opacity: 0 !important;
+    bottom: 20px;
+    left: 25%;
+    width: 50% !important;
+  }
+  .main__onSale__item__innerBox:hover {
+    box-shadow: 0 33px 61px -29px rgba(0, 0, 0, 0.5);
+  }
+  .main__onSale__item__innerBox:hover .cart-btn {
+    opacity: 1 !important;
+  }
+  .main__onSale__item__innerBox:hover .icons {
+    transform: rotateY(-3%);
+    top: 3%;
+    opacity: 1 !important;
   }
   .main__categories__category {
     padding-bottom: 1%;

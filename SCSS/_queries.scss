@@ -133,6 +133,31 @@
         margin: $margin-desktop-container;
     }
 
+    /* ITEMS DE OFERTA*/
+    .main__onSale__item__innerBox{
+        .icons{
+            opacity: 0 !important;
+        }
+        .cart-btn{
+            opacity: 0 !important;
+            bottom: 20px;
+            left: 25%;
+            width: 50% !important;
+        }
+        &:hover{
+            box-shadow: 0 33px 61px -29px rgb(0 0 0 /50%);
+            .cart-btn{
+                opacity: 1 !important;
+            }
+    
+            .icons{
+                transform: rotateY(-3%);
+                top: 3%;
+                opacity: 1 !important;
+            }
+        }
+    }
+
     .main__categories__category{
         padding-bottom: 1%;
     }
