@@ -35,6 +35,8 @@ body {
   overflow-x: hidden;
 }
 
+/* DISPLAY FELX */
+/* DAR TAMAÑOS */
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------ CSS PARA EL HEADER --------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -49,14 +51,16 @@ body {
 /* -------------------------------------------PARTE FIJA DEL HEADER */
 /* ---------------------------------------------------------------- */
 .header__fixed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
   width: 100vw;
   position: fixed;
   z-index: 5;
   background-color: #8B9E70;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 10px 5% 5px 5%;
 }
 
@@ -67,12 +71,14 @@ body {
 }
 
 .header__fiexed__tools {
-  width: 100%;
-  height: 100%;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   justify-content: flex-end;
   flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
 }
 
 /* ----------------------------BARRA DE NAVEGACION */
@@ -83,11 +89,13 @@ body {
   display: none;
 }
 .header__menu ul {
-  list-style: none;
   display: flex;
-  justify-content: space-between;
-  text-decoration: none;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
   font-family: "Heebo", sans-serif;
   font-size: small;
   margin: 2px;
@@ -108,8 +116,8 @@ body {
 }
 .header__menu__item #selected {
   color: #3a422f;
-  width: 100%;
   height: auto;
+  width: 100%;
   border-radius: 10PX;
 }
 
@@ -235,10 +243,10 @@ body {
 .header__info {
   background-color: #8B9E70;
   grid-area: headerInfo;
+  height: 300px;
   width: 100%;
   margin-top: 50px;
   padding: 5% 5%;
-  height: 300px;
 }
 
 .header__info__tittle {
@@ -329,9 +337,10 @@ body {
 /* ----------------------------------------------------------------- */
 .main__newArrivals {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   height: auto;
 }
 
@@ -350,8 +359,8 @@ body {
 }
 .main__newArrivals__item img {
   grid-area: img;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 .main__newArrivals__item:hover {
   background-color: #8B9E70;
@@ -377,6 +386,7 @@ body {
 /* ----------------------------------------------------------------- */
 .main__categories {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -479,12 +489,15 @@ main#sobreNosotros h2 {
 .main__helpContainer__section form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   justify-content: stretch;
 }
 .main__helpContainer__section #searchSection {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -557,7 +570,10 @@ main#ayuda h2 {
 .main__contactContainer__fields {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   justify-content: stretch;
+  align-items: stretch;
   text-align: center;
 }
 
@@ -734,6 +750,8 @@ footer section div {
   .header__info {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     justify-content: end;
     margin-top: 108px;
     padding: 2% 0;

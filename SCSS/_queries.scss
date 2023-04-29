@@ -73,8 +73,7 @@
 
     /* ------------------AJUSTAR TEXTO DEL HEADER*/
     .header__info{
-        display: flex;
-        flex-direction: column;
+        @include flexCenter(column);
         justify-content: end;
         margin-top: 108px;
         padding: 2% 0;

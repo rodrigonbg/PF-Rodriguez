@@ -4,9 +4,9 @@
 }
 
 .main__contactContainer__fields{
-    display: flex;
-    flex-direction: column;
+    @include flexCenter(column);
     justify-content: stretch;
+    align-items: stretch;
     text-align: center;
 
 }
@@ -19,7 +19,7 @@
 }
 
 .main__contact__TextField{
-     font-family: $font-family1;
+    font-family: $font-family1;
     font-size: 100%;
     border-radius: 20px;
     color: $textField-text-color;
