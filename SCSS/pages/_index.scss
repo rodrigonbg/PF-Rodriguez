@@ -12,18 +12,6 @@
         padding-bottom: 5%;
         .main__onSale__item__innerBox{
             position: relative;
-/*             &:hover{
-                box-shadow: 0 33px 61px -29px rgb(0 0 0 /50%);
-                .cart-btn{
-                    opacity: 1;
-                }
-        
-                .icons{
-                    transform: rotateY(-3%);
-                    top: 3%;
-                    opacity: 1;
-                }
-            } */
 
             .icons{
                 position: absolute;
@@ -34,12 +22,16 @@
                 right: 15px;
                 transition: all 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2 ease-in-out;
                 opacity: 1;
-        
                 a{
                     @include size(40px, 40px);
                     @include flexCenter(row);
                     border-radius: 50%;
                     background: #fff;
+                    color: black;
+                    &:active{
+                        color: $primary-color;
+                    }              
+                    
                 }
                 
             }
@@ -145,6 +137,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: all 0.2s ease-in;
     img{
         grid-area: img;
         @include size(100%, 100%);
@@ -152,6 +145,7 @@
     &:hover{
         background-color: $primary-color;
         color: #fff;
+        transform: scale(1.2, 1.2);
     }
 }
 

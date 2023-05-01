@@ -58,6 +58,9 @@
         order: 5;
         margin-right: 2%;
         padding: 5px 0;
+        &:focus{
+            width: 85%;
+        }
     }
 
     /* ----------------------MOSTRAR BOTON DE LOGIN*/
@@ -94,7 +97,7 @@
     .header__imgs{
         right: 10vw;
         width: 50%;
-        #SillonGris{
+        .imgs{
             padding: 0;
         }
     }
@@ -140,7 +143,7 @@
         }
         .cart-btn{
             opacity: 0 !important;
-            bottom: 20px;
+            bottom: 10px !important;
             left: 25%;
             width: 50% !important;
         }
@@ -151,12 +154,24 @@
             }
     
             .icons{
-                transform: rotateY(-3%);
                 top: 3%;
                 opacity: 1 !important;
+                cursor: pointer;
+                a{
+                    &:hover{
+                        .fa-heart{
+                            transform: scale(1.1, 1.1);  
+                        }
+                        .fa-eye{
+                            transform: scale(1.1, 1.1);  
+                        }
+                    }           
+                }
             }
         }
     }
+
+
 
     .main__categories__category{
         padding-bottom: 1%;

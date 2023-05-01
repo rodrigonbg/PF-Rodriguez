@@ -84,3 +84,17 @@ $margin-mobile-container:2% 5vw 10% 5vw;
 
 /* DESKTOP */
 $margin-desktop-container:2% 10vw 10% 10vw;
+
+/* ---------------------------------------------------- */
+/*----------------------------------------- ANIMACIONES */
+/* ---------------------------------------------------- */
+@keyframes Aparecer-desde-izquierda{
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
