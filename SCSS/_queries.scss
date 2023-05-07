@@ -267,6 +267,50 @@
     .footer__texto{
         font: $p-footer-desktop;
     }
+
+
+    /* ----------------------------------------------------------------- */
+    /* ---------------------------------------------- RESPONSIVE PAG 404 */
+    /* ----------------------------------------------------------------- */
+    body#error_page{
+        div.container{
+            section{
+                flex-direction: row-reverse;
+                div#info{
+                    padding:0;
+                    padding-right: 10%;
+                    padding-bottom: 15px;
+                    @include size(60vh, 40vw);
+                    justify-content: start;
+                    align-items: self-start;
+                    h1{
+                        font-size: 1000%;
+                    }
+                    h2{
+                        font-size: 300%;
+                    }
+                    p{
+                        font-size: 150%;
+                        padding:0;
+                        padding-top: 2%
+
+                    }
+                }
+                div#ilustracion{
+                    @include size(60vh, 60vw);
+                    img{
+                        @include size(60vh, 60vw);
+                    }
+                }
+            }
+
+            div#goHome{
+                button{
+                    width: 30%;
+                }
+            }
+        }     
+    }
 }
 
 
