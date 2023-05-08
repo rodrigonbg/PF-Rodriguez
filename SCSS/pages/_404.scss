@@ -13,7 +13,7 @@ body#error_page{
         height: 90vh;
         @include flexCenter(column);
         section{
-            padding-top: 100px;
+            padding-top: 10px;
             @include size(70vh, 100%);
             @include flexCenter(column);
             justify-content: space-between;
